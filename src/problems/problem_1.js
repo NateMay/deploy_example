@@ -9,7 +9,7 @@ export const description =
  something non-numeric for the Fahrenheit temperature.*\
  ';
 
-const explanation = `The problem in this example was that the while the fahrenheit is set using a hook, the celsius property was not.`;
+const explanation = `Although the fahrenheit property is set using a hook, the celsius property was not. Therefore, updates to the local celsius variable were not updating in a way that would affect the view/template.`;
 
 function fToC(f) {
     return (f-32)/1.8;
